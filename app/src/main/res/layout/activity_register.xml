@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/unguMuda"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/fill_pwdReg2"
+        android:layout_width="212dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_pwd"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fill_pwdReg" />
+
+    <EditText
+        android:id="@+id/fill_pwdReg"
+        android:layout_width="212dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_pwd"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fill_emailReg" />
+
+    <TextView
+        android:id="@+id/tv_judulReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="104dp"
+        android:text="Daftarkan Dirimu Sekarang"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_descJudulReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:text="Dapatkan Beasiswa Secepatkan!!!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judulReg" />
+
+    <Button
+        android:id="@+id/backToHomeReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fill_emailReg"
+        android:layout_width="212dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="12dp"
+        android:hint="Email"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descJudulReg" />
+
+    <Button
+        android:id="@+id/btn_loginReg"
+        android:layout_width="213dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/button"
+        android:text="Daftar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fill_pwdReg" />
+
+    <TextView
+        android:id="@+id/textViewReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_loginReg"
+        tools:layout_editor_absoluteX="276dp" />
+
+    <TextView
+        android:id="@+id/textView2Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="52dp"
+        android:text="Sudah punya akun?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_loginReg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

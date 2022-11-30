@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home" android:id="@+id/homeNav"
+        android:icon="@drawable/ic_ci_home_alt_fill"/>
+    <item android:title="Beasiswa" android:id="@+id/beaNav"
+        android:icon="@drawable/ic_ion_school_sharp"/>
+    <item android:title="Profile" android:id="@+id/profileNav"
+        android:icon="@drawable/ic_bi_person_fill"/>
+</menu>

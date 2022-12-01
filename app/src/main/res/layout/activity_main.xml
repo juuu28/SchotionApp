@@ -30,9 +30,10 @@
                 android:background="@color/ungu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.655"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/profile_image"
@@ -57,14 +58,6 @@
                 app:layout_constraintStart_toEndOf="@+id/profile_image"
                 app:layout_constraintTop_toTopOf="@+id/profile_image" />
 
-
-            <ImageView
-                android:id="@+id/notificationsImage"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_ci_notification_dot"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/profile_image" />
 
             <EditText
                 android:id="@+id/fill_email"

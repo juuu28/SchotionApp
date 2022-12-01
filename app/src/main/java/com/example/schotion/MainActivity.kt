@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.main, Home)
+            commit()
+        }
         findViewById<Button>(R.id.toLogin).setOnClickListener(){
             intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)

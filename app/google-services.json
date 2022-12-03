@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "149138935712",
+    "firebase_url": "https://schotion-56280-default-rtdb.firebaseio.com",
+    "project_id": "schotion-56280",
+    "storage_bucket": "schotion-56280.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149138935712:android:38652a7801a0aaade8dec5",
+        "android_client_info": {
+          "package_name": "com.example.schotion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149138935712-enhdbkn2tbfos36n8f2r9vmk4ag2ri53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhW5Z0Gdwq7rKu5IJHT92xk8mY8KlDr5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149138935712-enhdbkn2tbfos36n8f2r9vmk4ag2ri53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,8 +8,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 
 class AddBeasiswa : AppCompatActivity() {
 
@@ -59,9 +57,9 @@ class AddBeasiswa : AppCompatActivity() {
                 periode.error = "Periode tidak boleh kosong"
             }
             database = FirebaseDatabase.getInstance().getReference("Beasiswa")
-            val BeaID = database.push().key!!
-            val beasiswas = Beasiswa(BeaID, namaBea, penerimaBea, syaratBea, periodeBea, cattBea)
-            database.child(BeaID).setValue(beasiswas).addOnCompleteListener {
+            val beaID = database.push().key!!
+            val beasiswas = Beasiswa(beaID, namaBea, penerimaBea, syaratBea, periodeBea, cattBea)
+            database.child(beaID).setValue(beasiswas).addOnCompleteListener {
                 nama.text.clear()
                 penerima.text.clear()
                 syarat.text.clear()
@@ -69,7 +67,7 @@ class AddBeasiswa : AppCompatActivity() {
                 catt.text.clear()
 
                 Toast.makeText(this, "Berhasil menambahkan beasiswa", Toast.LENGTH_SHORT).show()
-            }.addOnFailureListener { err ->
+            }.addOnFailureListener {
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
             }
         }
@@ -77,8 +75,5 @@ class AddBeasiswa : AppCompatActivity() {
     }
     private fun hideActionBar() {
         supportActionBar?.hide()
-    }
-    private fun simpanBeas(){
-
     }
 }

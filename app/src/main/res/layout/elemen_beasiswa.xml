@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="20dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/abu"
+        app:strokeWidth="2dp"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/beasiswa_img"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/beasiswa_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_light" />
+
+            <TextView
+                android:id="@+id/beasiswa_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Kunci Sukses"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/beasiswa_img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/pengguna_img"
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                app:layout_constraintStart_toEndOf="@+id/beasiswa_img"
+                app:layout_constraintTop_toBottomOf="@+id/beasiswa_title"
+                app:srcCompat="@drawable/ic_bi_person_fill" />
+
+            <TextView
+                android:id="@+id/pengguna_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="300 pengguna"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@id/pengguna_img"
+                app:layout_constraintTop_toBottomOf="@+id/beasiswa_title" />
+
+            <TextView
+                android:id="@+id/beasiswa_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:text="Rp 40.000"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@id/beasiswa_img"
+                app:layout_constraintTop_toBottomOf="@id/pengguna_img" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="20dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="187dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/beasiswa_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/more_action" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="16dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:srcCompat="@drawable/share" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

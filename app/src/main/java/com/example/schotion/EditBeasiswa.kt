@@ -1,18 +1,16 @@
 package com.example.schotion
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.android.material.button.MaterialButton
 
-
-class AddBeasiswa : AppCompatActivity() {
-
+class EditBeasiswa : AppCompatActivity() {
     //private lateinit var binding: ActivityAddBeasiswaBinding
     private lateinit var database: DatabaseReference
     private lateinit var nama: EditText
@@ -24,10 +22,9 @@ class AddBeasiswa : AppCompatActivity() {
     private lateinit var simpan: Button
     private lateinit var kalender: MaterialButton
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_beasiswa)
+        setContentView(R.layout.activity_edit_beasiswa)
 
         nama = findViewById(R.id.fill_namaBeas)
         penerima = findViewById(R.id.fill_penerima)
@@ -37,24 +34,7 @@ class AddBeasiswa : AppCompatActivity() {
         batal = findViewById(R.id.btn_batal)
         simpan = findViewById(R.id.btn_simpan)
 
-//        kalender.setOnClickListener {
-//            val datePickerRange = MaterialDatePicker.Builder.dateRangePicker()
-//                .setTitleText("Select Date")
-//                .setSelection(
-//                    Pair(
-//                        MaterialDatePicker.thisMonthInUtcMilliseconds(),
-//                        MaterialDatePicker.todayInUtcMilliseconds()
-//                    )
-//                )
-//                .build()
-//            datePickerRange.show(supportFragmentManager,"date_picker")
-//
-//            datePickerRange.addOnPositiveButtonClickListener {
-//                val simpleDateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
-//                var tanggal = "${simpleDateFormat.format(it.first)} s/d ${simpleDateFormat.format(it.second)}"
-//                //date.text = tanggal
-//            }
-//        }
+        hideActionBar()
 
         batal.setOnClickListener() {
             intent = Intent(this, HomeFragment::class.java)
@@ -93,7 +73,6 @@ class AddBeasiswa : AppCompatActivity() {
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
             }
         }
-        hideActionBar()
     }
     private fun hideActionBar() {
         supportActionBar?.hide()

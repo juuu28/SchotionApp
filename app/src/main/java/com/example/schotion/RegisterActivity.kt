@@ -4,17 +4,21 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        findViewById<Button>(R.id.backToHomeReg).setOnClickListener(){
-            intent = Intent(this, MainActivity::class.java)
+        hideActionBar()
+
+        val goLogin = findViewById<TextView>(R.id.tv_goToLogin)
+
+        goLogin.setOnClickListener {
+            intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        hideActionBar()
     }
     private fun hideActionBar() {
         supportActionBar?.hide()

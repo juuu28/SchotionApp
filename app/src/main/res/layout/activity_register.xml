@@ -60,16 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_judulReg" />
 
-    <Button
-        android:id="@+id/backToHomeReg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="23dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/fill_emailReg"
         android:layout_width="212dp"
@@ -98,15 +88,6 @@
         app:layout_constraintTop_toBottomOf="@+id/fill_pwdReg" />
 
     <TextView
-        android:id="@+id/textViewReg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_loginReg"
-        tools:layout_editor_absoluteX="276dp" />
-
-    <TextView
         android:id="@+id/textView2Reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,5 +96,17 @@
         android:text="Sudah punya akun?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_loginReg" />
+
+    <TextView
+        android:id="@+id/tv_goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="52dp"
+        android:text="Login"
+        android:textColor="@color/link"
+        app:layout_constraintStart_toEndOf="@+id/textView2Reg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_loginReg" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

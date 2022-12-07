@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeasiswaDetail">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/desc_card"
+        android:layout_marginTop="20dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/abu"
+        app:strokeWidth="2dp"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="30dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/desc_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Deskripsi Beasiswa"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/garis"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abu"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/desc_label"
+                android:alpha="0.9"/>
+            <TextView
+                android:id="@+id/desc_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beasiswa ini dipersembahkan oleh Heisenberg Foundation"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="7dp"
+                app:layout_constraintTop_toBottomOf="@+id/garis"
+                tools:layout_editor_absoluteY="12dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--     card persyaratan-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/req_card"
+        android:layout_marginTop="10dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/desc_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/abu"
+        app:strokeWidth="2dp"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="30dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/req_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Persyaratan Beasiswa"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/garis2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abu"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/req_label"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:id="@+id/req_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:text="1. Usia min 18 tahun"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/garis2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--     card keterangan-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/info_card"
+        android:layout_marginTop="10dp"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/req_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/abu"
+        app:strokeWidth="2dp"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="30dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/info_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Keterangan Beasiswa"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/garis3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/abu"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/info_label"
+                android:alpha="0.9"/>
+
+            <ImageView
+                android:id="@+id/durasi_img"
+                android:layout_width="22dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/garis3"
+                app:srcCompat="@drawable/durasi_img" />
+
+            <ImageView
+                android:id="@+id/tunjangan_img"
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/durasi_img"
+                app:srcCompat="@drawable/tunjangan_img" />
+
+            <ImageView
+                android:id="@+id/target_img"
+                android:layout_width="21dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tunjangan_img"
+                app:srcCompat="@drawable/target_img" />
+
+            <ImageView
+                android:id="@+id/link_img"
+                android:layout_width="23dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="11dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/target_img"
+                app:srcCompat="@drawable/link_img" />
+
+            <TextView
+                android:id="@+id/info_durasi"
+                android:layout_width="228dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="3 Tahun"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@+id/durasi_img"
+                app:layout_constraintTop_toBottomOf="@+id/garis3"
+                app:layout_goneMarginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/info_tunjangan"
+                android:layout_width="230dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:text="500.000/bulan"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@+id/tunjangan_img"
+                app:layout_constraintTop_toBottomOf="@+id/info_durasi" />
+
+            <TextView
+                android:id="@+id/info_target"
+                android:layout_width="230dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="13dp"
+                android:text="Mahasiswa"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@+id/target_img"
+                app:layout_constraintTop_toBottomOf="@+id/info_tunjangan" />
+
+            <TextView
+                android:id="@+id/info_link"
+                android:layout_width="232dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="8dp"
+                android:text="beasiswa.heisnberg.org"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info_target" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="26dp"
+        android:text="update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_card" />
+
+    <Button
+        android:id="@+id/btn_hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="69dp"
+        android:text="hapus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

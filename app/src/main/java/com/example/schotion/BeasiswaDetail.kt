@@ -16,6 +16,8 @@ class BeasiswaDetail : AppCompatActivity() {
     private lateinit var nama: TextView
     private lateinit var penerima: TextView
     private lateinit var syarat: TextView
+    private lateinit var periode: TextView
+    private lateinit var catt: TextView
     private lateinit var update: Button
     private lateinit var hapus: Button
 
@@ -31,7 +33,9 @@ class BeasiswaDetail : AppCompatActivity() {
             openUpdateDialog(
                 intent.getStringExtra("namaBeasiswa").toString(),
                 intent.getStringExtra("penerimaBeasiswa").toString(),
-                intent.getStringExtra("syaratBeasiswa").toString()
+                intent.getStringExtra("syaratBeasiswa").toString(),
+                intent.getStringExtra("periodePendaftaran").toString(),
+                intent.getStringExtra("cattTambahan").toString()
             )
         }
         btn_hapus.setOnClickListener {
@@ -48,7 +52,9 @@ class BeasiswaDetail : AppCompatActivity() {
     private fun openUpdateDialog(
         namaBeasiswa: String,
         penerimaBeasiswa: String,
-        syaratBeasiswa: String
+        syaratBeasiswa: String,
+        periodePendaftaran: String,
+        cattTambahan: String
 
     ) {
         val mDialog = AlertDialog.Builder(this)
@@ -68,6 +74,8 @@ class BeasiswaDetail : AppCompatActivity() {
         uNama.setText(intent.getStringExtra("namaBeasiswa").toString())
         uPenerima.setText(intent.getStringExtra("penerimaBeasiswa").toString())
         uSyarat.setText(intent.getStringExtra("syaratBeasiswa").toString())
+        uPeriode.setText(intent.getStringExtra("periodePendaftaran").toString())
+        uCatt.setText(intent.getStringExtra("cattTambahan").toString())
 
         mDialog.setTitle("Update $namaBeasiswa")
 
@@ -112,7 +120,7 @@ class BeasiswaDetail : AppCompatActivity() {
         mTask.addOnSuccessListener {
             Toast.makeText(this, "Employee data deleted", Toast.LENGTH_LONG).show()
 
-            val intent = Intent(this, HomeFragment()::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             finish()
             startActivity(intent)
         }.addOnFailureListener{ error ->
@@ -124,6 +132,8 @@ class BeasiswaDetail : AppCompatActivity() {
         nama = findViewById(R.id.desc_content)
         penerima = findViewById(R.id.info_target)
         syarat = findViewById(R.id.req_content)
+        periode = findViewById(R.id.info_durasi)
+        catt = findViewById(R.id.info_tunjangan)
 
         update = findViewById(R.id.btn_update)
         hapus = findViewById(R.id.btn_hapus)
@@ -133,5 +143,8 @@ class BeasiswaDetail : AppCompatActivity() {
         nama.text = intent.getStringExtra("namaBeasiswa")
         penerima.text = intent.getStringExtra("penerimaBeasiswa")
         syarat.text = intent.getStringExtra("syaratBeasiswa")
+        periode.text = intent.getStringExtra("periodePendaftaran")
+        catt.text = intent.getStringExtra("cattTambahan")
+
     }
 }

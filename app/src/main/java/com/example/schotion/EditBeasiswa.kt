@@ -26,7 +26,7 @@ class EditBeasiswa : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_beasiswa)
 
-        nama = findViewById(R.id.fill_namaBeas)
+        nama = findViewById(R.id.fill_nama)
         penerima = findViewById(R.id.fill_penerima)
         syarat = findViewById(R.id.fill_syarat)
         periode = findViewById(R.id.fillPeriode)

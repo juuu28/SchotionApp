@@ -28,10 +28,6 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.main, Home)
             commit()
         }
-        findViewById<Button>(R.id.toLogin).setOnClickListener(){
-            intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
 
         hideActionBar()
 
@@ -39,10 +35,6 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.homeNav -> supportFragmentManager.beginTransaction().apply {
                     replace(R.id.main, Home)
-                    commit()
-                }
-                R.id.beaNav -> supportFragmentManager.beginTransaction().apply {
-                    replace(R.id.main, Beasiswa)
                     commit()
                 }
                 R.id.profileNav -> supportFragmentManager.beginTransaction().apply {

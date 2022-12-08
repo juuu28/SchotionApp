@@ -73,26 +73,6 @@
                 app:layout_constraintStart_toEndOf="@id/beasiswa_img"
                 app:layout_constraintTop_toBottomOf="@id/pengguna_img" />
 
-            <ImageButton
-                android:id="@+id/delete_button"
-                android:layout_width="16dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="152dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toEndOf="@+id/beasiswa_title"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_delete" />
-
-            <ImageButton
-                android:id="@+id/edit_button"
-                android:layout_width="16dp"
-                android:layout_height="21dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_edit" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

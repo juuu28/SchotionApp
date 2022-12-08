@@ -29,32 +29,13 @@ class AddBeasiswa : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_beasiswa)
 
-        nama = findViewById(R.id.fill_namaBeas)
+        nama = findViewById(R.id.fill_nama)
         penerima = findViewById(R.id.fill_penerima)
         syarat = findViewById(R.id.fill_syarat)
         periode = findViewById(R.id.fillPeriode)
         catt = findViewById(R.id.fill_catt)
         batal = findViewById(R.id.btn_batal)
         simpan = findViewById(R.id.btn_simpan)
-
-//        kalender.setOnClickListener {
-//            val datePickerRange = MaterialDatePicker.Builder.dateRangePicker()
-//                .setTitleText("Select Date")
-//                .setSelection(
-//                    Pair(
-//                        MaterialDatePicker.thisMonthInUtcMilliseconds(),
-//                        MaterialDatePicker.todayInUtcMilliseconds()
-//                    )
-//                )
-//                .build()
-//            datePickerRange.show(supportFragmentManager,"date_picker")
-//
-//            datePickerRange.addOnPositiveButtonClickListener {
-//                val simpleDateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
-//                var tanggal = "${simpleDateFormat.format(it.first)} s/d ${simpleDateFormat.format(it.second)}"
-//                //date.text = tanggal
-//            }
-//        }
 
         batal.setOnClickListener() {
             intent = Intent(this, HomeFragment::class.java)

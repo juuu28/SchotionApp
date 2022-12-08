@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tv_profilNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/fill_namaBeas"
+        android:id="@+id/fill_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -106,7 +106,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_profilNama" />
 
     <TextView
         android:id="@+id/textView10"
@@ -116,7 +116,7 @@
         android:layout_marginTop="10dp"
         android:text="Penerima Beasiswa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fill_namaBeas" />
+        app:layout_constraintTop_toBottomOf="@+id/fill_nama" />
 
     <EditText
         android:id="@+id/fill_penerima"
@@ -150,10 +150,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_profilNoTelp" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tv_profilNoTelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"

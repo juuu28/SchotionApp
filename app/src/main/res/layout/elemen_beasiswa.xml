@@ -55,23 +55,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="4dp"
-                android:text="300 pengguna"
+                android:text="300 pendaftar"
                 android:textColor="@color/black"
                 android:textSize="10dp"
                 app:layout_constraintStart_toEndOf="@id/pengguna_img"
                 app:layout_constraintTop_toBottomOf="@+id/beasiswa_title" />
 
-            <TextView
-                android:id="@+id/beasiswa_fee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="20dp"
-                android:text="Rp 40.000"
-                android:textColor="@color/black"
-                android:textSize="10dp"
-                app:layout_constraintStart_toEndOf="@id/beasiswa_img"
-                app:layout_constraintTop_toBottomOf="@id/pengguna_img" />
+<!--            <TextView-->
+<!--                android:id="@+id/beasiswa_fee"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Rp 40.000"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="10dp"-->
+<!--                app:layout_constraintStart_toEndOf="@id/beasiswa_img"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/pengguna_img" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -118,7 +118,7 @@ class BeasiswaDetail : AppCompatActivity() {
         val mTask = dbRef.removeValue()
 
         mTask.addOnSuccessListener {
-            Toast.makeText(this, "Employee data deleted", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Beasiswa berhasil dihapus", Toast.LENGTH_LONG).show()
 
             val intent = Intent(this, MainActivity::class.java)
             finish()

@@ -5,19 +5,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class onboarding3 : AppCompatActivity() {
+class onboarding1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_onboarding3)
+        setContentView(R.layout.activity_onboarding1)
+        hideActionBar()
 
-        val tv_start: TextView =findViewById(R.id.tv_getStarted)
+        val tv:TextView=findViewById(R.id.tv_OnNext)
+        val tv1:TextView=findViewById(R.id.tv_OnSkip)
 
-        tv_start.setOnClickListener{
+        tv.setOnClickListener{
+            startActivity(Intent(this,onboarding2::class.java))
+        }
+
+        tv1.setOnClickListener{
             startActivity(Intent(this,LoginActivity::class.java))
         }
-        hideActionBar()
     }
     private fun hideActionBar() {
         supportActionBar?.hide()
-    }
+        }
 }

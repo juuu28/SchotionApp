@@ -19,7 +19,7 @@
         android:hint="Password"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fill_email" />
 
@@ -27,11 +27,13 @@
         android:id="@+id/tv_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
+        android:layout_marginStart="144dp"
         android:layout_marginTop="108dp"
         android:text="Selamat Datang"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="17dp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -40,21 +42,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="15dp"
+        android:textColor="@color/black"
         android:text="Dapatkan Beasiswa Secepatkan!!!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_judul" />
 
-    <ImageButton
-        android:id="@+id/backToHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="23dp"
-        android:text="Kembali"
-        android:src="@drawable/ic_back"
-        android:background="@color/unguMuda"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/backToHome"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="23dp"-->
+<!--        android:text="Kembali"-->
+<!--        android:src="@drawable/ic_back"-->
+<!--        android:background="@color/unguMuda"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <EditText
         android:id="@+id/fill_email"
@@ -68,7 +71,7 @@
         android:hint="Email"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_descJudul" />
 
@@ -90,6 +93,7 @@
         android:layout_marginStart="200dp"
         android:layout_marginTop="24dp"
         android:text="Forgot Password?"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
@@ -100,6 +104,7 @@
         android:layout_marginStart="79dp"
         android:layout_marginTop="99dp"
         android:text="Belum punya akun?"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 

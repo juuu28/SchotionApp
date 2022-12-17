@@ -14,7 +14,7 @@ class onboarding2 : AppCompatActivity() {
         val tv_next: TextView = findViewById(R.id.tv_next)
 
         tv_lewati.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,LoginActivity::class.java))
         }
         tv_next.setOnClickListener{
             startActivity(Intent(this,onboarding3::class.java))
